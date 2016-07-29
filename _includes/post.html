@@ -1,0 +1,19 @@
+<div class="col-md-4 col-xs-6">
+  <div class="tile">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <div class="tile-image" style="background-image:url({{ post.image_small | prepend: site.spaces_img_url }})"></div>
+      <div class="tile-content">
+        <div class="vertical-center">
+          <div class="inner">
+            <h3>
+              {% if page.category == null %}
+                <small>{{ post.categories }}</small>
+              {% endif %}
+              {{ post.title }}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,177 @@
+// Variables
+//
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+
+
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+
+// Colors
+$gray-bg: #fafafa;
+
+// Text colors
+$gray-blue: #5F6A7D;
+$gray-blue-dark: #2E3B4E;
+
+$error-red: #DF331F;
+
+// Custom colors
+
+$black-light: #65656E;
+$black: #53545B;
+$black-dark: #36373E;
+
+$gray-light: #BABBC1;
+$gray: #A4A5AD;
+$gray-dark: #787985;
+
+$white-light: #ffffff;
+$white: #F1F2F4;
+$white-dark: #DEE0E5;
+
+$red-light: #e97174;
+$red: #E14245;
+$red-dark: #922b2d;
+
+$blue-light: #5cb8e6;
+$blue: #2e7cce;
+$blue-dark: #2586b7;
+$blue-darkest: #2077a2;
+
+$green-light: #158969;
+$green: #55c9a9;
+$green-dark: #1CB78C;
+
+$orange-light: #f79e64;
+$orange: #F47D30;
+$orange-dark: #b75e24;
+
+$yellow-light: #FEFAEE;
+$yellow: #FBECBC;
+$yellow-dark: #F6E6B6;
+
+
+
+$charcoal: #161b1f;
+
+$charcoal-muted: #1b2126;
+
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             #0275d8 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex:               false !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        false !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer:                     1rem !default;
+$spacer-x:                   $spacer !default;
+$spacer-y:                   $spacer !default;
+$border-width:               1px !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                    #fff !default;
+$body-color:                 $gray-blue;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                 $brand-primary !default;
+$link-decoration:            none !default;
+$link-hover-color:           darken($link-color, 15%) !default;
+$link-hover-decoration:      underline !default;
+
+
+// Grid breakpoints
+//
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+) !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+) !default;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12 !default;
+$grid-gutter-width:          1.875rem !default; // 30px
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:     "proxima-nova", Helvetica, Arial, sans-serif;
+$font-family-base:           $font-family-sans-serif !default;

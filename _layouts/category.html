@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/Article">
+  <meta itemprop="genre" content="{{ page.category }}">
+  <div id="locations-showcase">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <header class="text-center m-b-lg">
+            <h5>Coworking spaces</h5>
+            <h3>See the amazing coworking spaces waiting for you in {{ page.title}}</h3>
+            <div itemprop="articleBody">
+              {{ content }}
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        {% for post in site.categories[page.category] %}
+          {% include post.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>

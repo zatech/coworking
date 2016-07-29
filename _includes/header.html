@@ -1,0 +1,27 @@
+<header>
+<nav class="navbar navbar-coworking" id="coworking-header">
+  <div class="navbar-container">
+    <div class="container">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img class="logo" src="{{ "/images/logo_black.png" | prepend: site.baseurl }}">
+      </a>
+      <div class="pull-right">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+          ☰
+        </button>
+      </div>
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+        <ul class="nav navbar-nav pull-right">
+          {% for tag in site.tags %}
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/{{ tag | first | slugify }}/">
+                {{ tag | first }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>

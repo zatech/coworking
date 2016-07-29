@@ -1,0 +1,94 @@
+<div class="space-side-panel">
+  <div class="space-section">
+    <h5>Contact</h5>
+    <table class="contact-table">
+      <tbody>
+        {% if page.phone %}
+        <tr>
+          <td>
+            <i class="fa fa-phone"></i>
+          </td>
+          <td>
+            <tel>{{ page.phone }}</tel>
+          </td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td>
+            <i class="fa fa-envelope-o"></i>
+          </td>
+          <td>
+            <a href="mailto:{{ page.email }}" >
+              {{ page.email }}
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-globe"></i>
+          </td>
+          <td>
+            <a href="{{ page.website }}" >
+               {{ page.website }}
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-map-marker"></i>
+          </td>
+          <td>
+            <address>
+              {{ page.address }}
+            </address>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  {% if page.day_rate or page.week_rate or page.month_rate %}
+    <div class="space-section" id="pricing">
+      <h5>Pricing</h5>
+      <table>
+        <tbody>
+          {% if page.day_rate %}
+          <tr>
+            <td style="width: 70px;">
+              <strong>Daily:</strong>
+            </td>
+            <td>
+               R{{ page.day_rate }}
+            </td>
+          </tr>
+          {% endif %}
+          {% if page.week_rate %}
+          <tr>
+            <td style="width: 70px;">
+              <strong>Weekly:</strong>
+            </td>
+            <td>
+               R{{ page.week_rate }}
+            </td>
+          </tr>
+          {% endif %}
+          {% if page.month_rate %}
+          <tr>
+            <td style="width: 70px;">
+              <strong>Monthly:</strong>
+            </td>
+            <td>
+               R{{ page.month_rate }}
+            </td>
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+</div>
+<div class="built-by built-by-side-panel">
+  <a href="https://www.offerzen.com/?utm_source=coworking&utm_medium=side-panel&utm_campaign=slogan", target: "_blank" >
+    <img src="{{ '/images/offerzen_white.png' | prepend: site.baseurl }}">
+    <p>Receive job offers from 100+ South African tech companies</p>
+  </a>
+</div>

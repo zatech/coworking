@@ -1,0 +1,115 @@
+.hidden {
+  display: none;
+}
+
+.b-0 {
+  border: 0;
+}
+
+.b-a {
+  border: 1px solid $white-dark;
+}
+
+.b-t {
+  border-top: 1px solid $white-dark;
+}
+
+.b-r {
+  border-right: 1px solid $white-dark;
+}
+
+.b-b {
+  border-bottom: 1px solid $white-dark;
+}
+
+.b-l {
+  border-left: 1px solid $white-dark;
+}
+
+.text-gray-blue {
+  color: $gray-blue;
+}
+
+@include media-breakpoint-up(xs) {
+  .xs-text-left {
+    text-align: left;
+  }
+  .xs-text-right {
+    text-align: right;
+  }
+  .xs-text-center {
+    text-align: center;
+  }
+  .xs-p-a-lg {
+    padding: 1.5rem !important;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .sm-text-left {
+    text-align: left;
+  }
+  .sm-text-right {
+    text-align: right;
+  }
+  .sm-text-center {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .md-text-left {
+    text-align: left;
+  }
+  .md-text-right {
+    text-align: right;
+  }
+  .md-text-center {
+    text-align: center;
+  }
+  .md-p-a-lg {
+    padding: 3rem !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .lg-text-left {
+    text-align: left;
+  }
+  .lg-text-right {
+    text-align: right;
+  }
+  .lg-text-center {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .xl-text-left {
+    text-align: left;
+  }
+  .xl-text-right {
+    text-align: right;
+  }
+  .xl-text-center {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .container-thin {
+    max-width: 760px;
+  }
+  .container-medium {
+    max-width: 840px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container-thin {
+    max-width: 760px;
+  }
+  .container-medium {
+    max-width: 860px;
+  }
+}

@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="hero" id="hero-home">
+  <div class="hero-content">
+    <div class="vertical-center">
+      <div class="inner">
+        <div class="container">
+          <h1>
+            The best list of coworking spaces in South Africa
+          </h1>
+          <div class="city-links">
+            {% for tag in site.tags %}
+              <a href="{{ site.baseurl }}/{{ tag | first | slugify }}/">
+                {{ tag | first }}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-image"></div>
+</div>
+<div class="offerzen-ad">
+  <div class="container">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+<a href="https://www.offerzen.com/?utm_source=coworking&amp;utm_medium=banner&amp;utm_campaign=built-by">              <img src="{{ "/images/built-by.png" | prepend: site.baseurl }}">
+</a>          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div id="locations-showcase">
+  <div class="container">
+    <header class="text-center m-b-lg">
+      <h5>Coworking spaces</h5>
+      <h3>See the amazing coworking spaces waiting for you</h3>
+    </header>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts %}
+        {% include post.html %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
