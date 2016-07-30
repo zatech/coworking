@@ -7,13 +7,14 @@
 
 # Site settings
 title: Coworking South Africa
-email: your-email@domain.com
+email: coworking@offerzen.com
 description: > # this means to ignore newlines until "baseurl:"
   Find coworking spaces in Cape Town, Johannesburg and Durban
 baseurl: "/coworking" # the subpath of your site, e.g. /blog
 spaces_img_url: "/coworking/images/spaces/"
 url: "http://zatech.github.io" # the base hostname & protocol for your site
 twitter_username: offerzen
+facebook_page: offerzen
 github_username: zatech
 
 # Build settings
